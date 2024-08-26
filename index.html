@@ -5,16 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock Paper Scissors</title>
     <link rel="stylesheet" href="style.css">
-    <script src="Rock_Paper_Scissors.js" defer></script>
+    <script src="script.js" defer></script>
     
 </head>
 <body>
     <h1>Welcome to the Rock-Paper-Scissors game!</h1>
     <h2>Choose an item:</H2>
     <div class="rps_options">   
-        <img src="images/Rock.png" alt="Rock">
-        <img src="images/Paper.png" alt="Paper">
-        <img src="images/Scissors.png" alt="Scissors">
+        <img id="rock" src="images/rock.png" alt="Rock">
+        <img id="paper" src="images/paper.png" alt="Paper">
+        <img id="scissors" src="images/scissors.png" alt="Scissors">
     </div> 
+    <div>
+        <h2 id="computer-choice">Computer chose: </h2>    <!-- Placeholder for the computer's choice-->
+        <img id="computer-choice-img" src="" alt="Computer's choice">
+    </div>
 </body>
 </html>
