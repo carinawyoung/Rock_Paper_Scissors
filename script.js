@@ -61,8 +61,10 @@ document.addEventListener('DOMContentLoaded', function() {   // sets an event li
           images.forEach(img => {
             if (img !== image) {
               img.classList.add('fade-out');
-            } else {
-              image.classList.add('center'); 
+            } else {          
+                setTimeout(() => {
+                  image.classList.add('center');
+                }, 500); // Delay of 500ms (matches the fade-out transition duration)
             }
           });
 
